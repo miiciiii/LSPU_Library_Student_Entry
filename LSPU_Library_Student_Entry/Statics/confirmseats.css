@@ -1,0 +1,97 @@
+  /***************/
+  /* Library Map */
+  /***************/
+  .hidden-floor-map {
+    display: none;
+    opacity: 0;
+  }
+  
+  .library-map-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3rem;
+    width: 120rem;
+    height: 55rem;
+    margin: 2.4rem 0 0;
+    background-color: #ececeb;
+    box-shadow: 0 20px 30px 10px rgb(0, 0, 0, 0.1);
+  }
+  
+  .library-container {
+    width: 80rem;
+  }
+  
+  .map-heading {
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 1.8rem 0 1.2rem;
+    text-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .floor-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .map-hover {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .map-hover:hover {
+    fill: #cacae3;
+  }
+  
+  .next-floor-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-right: 1.2rem;
+  }
+  
+  .next-floor-btn {
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #252629;
+    cursor: pointer;
+    border: none;
+    margin-top: 0.6rem;
+  }
+  
+  .next-floor-btn:link,
+  .next-floor-btn:visited {
+    transition: all 0.3s;
+  }
+  
+  .next-floor-btn:hover,
+  .next-floor-btn:active {
+    color: #637292;
+  }
+  
+  .seat-selection-confirm {
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: #505499;
+    color: #ecebeb;
+    padding: 1.2rem 2.4rem;
+    border-radius: 1rem;
+    width: 12rem;
+    align-self: auto;
+    margin: 0.8rem auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .seat-selection-confirm:hover,
+  .seat-selection-confirm:active {
+    background-color: #58A4B0;
+    color: #ececeb;
+    box-shadow: 0 20px 30px 10px rgb(88, 164, 176, 0.25);
+  }

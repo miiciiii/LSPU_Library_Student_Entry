@@ -1,0 +1,2018 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Student Library Entry Monitoring Site for Laguna State Polytechnic University (LSPU-SCC)"
+    />
+    <meta
+      name="keywords"
+      content="LSPU-SCC, library, student, entry monitoring, study spaces, technology"
+    />
+    <title>LSPU-SCC Student Library Entry Monitoring Site</title>
+    <script src="{% static 'Scripts/adminpage.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'adminpage.css' %}" />
+    <link rel="icon" type="image/png" href="{% static 'Images/logo.png' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <!-- Webpage Container -->
+    <div class="container">
+      <div class="dashboard-container">
+        <nav class="dashboard-nav">
+          <header class="nav-header">
+            <div class="nav-logo-container">
+              <a href="#">
+                <img
+                  class="nav-logo"
+                  alt="LSPU-SCC Logo"
+                  src="{% static 'Images/logo.png' %}"
+                />
+              </a>
+            </div>
+            <p class="nav-title">University Library<br />ADMIN</p>
+          </header>
+          <div class="nav-bar">
+            <button class="nav-button">Seating Capacity</button>
+            <button class="nav-button">Student Information</button>
+            <button class="nav-button">History of Visit</button>
+          </div>
+          <button id="logoutButton" class="nav-logout">
+            <ion-icon name="log-out-outline" class="log-out"></ion-icon>Logout
+        </button>
+        </nav>
+        <section class="dashboard-content">
+          <!-- Seating Capacity -->
+          <div class="library-map-container">
+            <div class="library-container" id="1st-floor-library">
+              <h2 class="map-heading">1st Floor</h2>
+              <div class="library-map">
+                <!-- 1st Floor Library Map  -->
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 2598 1088"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="1st-floor-stair">
+                    <rect
+                      x="2541.5"
+                      y="798.5"
+                      width="22"
+                      height="182"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 2nd Floor - Stairs that provide access to the
+                        second floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2519.5"
+                      y="798.5"
+                      width="22"
+                      height="182"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 2nd Floor - Stairs that provide access to the
+                        second floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2497.5"
+                      y="798.5"
+                      width="22"
+                      height="182"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 2nd Floor - Stairs that provide access to the
+                        second floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2475.5"
+                      y="798.5"
+                      width="22"
+                      height="182"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 2nd Floor - Stairs that provide access to the
+                        second floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2453.5"
+                      y="798.5"
+                      width="22"
+                      height="182"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 2nd Floor - Stairs that provide access to the
+                        second floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2431.5"
+                      y="798.5"
+                      width="22"
+                      height="182"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 2nd Floor - Stairs that provide access to the
+                        second floor
+                      </title>
+                    </rect>
+                  </g>
+  
+                  <rect
+                    x="2431.5"
+                    y="121.5"
+                    width="132"
+                    height="677"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--information-desk--2"
+                  >
+                    <title>
+                      Information Desk (Right Side) - Section to inquire about
+                      library services and receive guidance
+                    </title>
+                  </rect>
+  
+                  <g class="1st-pc">
+                    <rect
+                      x="2066.5"
+                      y="917.5"
+                      width="122"
+                      height="67"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        PC Area - Contains computer for school research and
+                        academic related purposes
+                      </title>
+                    </rect>
+                    <rect
+                      x="2188.5"
+                      y="917.5"
+                      width="122"
+                      height="67"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        PC Area - Contains computer for school research and
+                        academic related purposes
+                      </title>
+                    </rect>
+                  </g>
+  
+                  <rect
+                    x="2196.5"
+                    y="589.5"
+                    width="77"
+                    height="157"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat--14"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people located at the right side
+                    </title>
+                  </rect>
+                  <rect
+                    x="2026.5"
+                    y="589.5"
+                    width="77"
+                    height="157"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat--13"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people located at the right side
+                    </title>
+                  </rect>
+                  <rect
+                    x="1863.5"
+                    y="589.5"
+                    width="77"
+                    height="157"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat--12"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people located at the right side
+                    </title>
+                  </rect>
+                  <rect
+                    x="2257.5"
+                    y="326.5"
+                    width="117"
+                    height="182"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--8-seat--4"
+                  >
+                    <title>
+                      8 Seat Table Area - Largest table area accommodating groups
+                      of eight people for study
+                    </title>
+                  </rect>
+                  <rect
+                    x="2093.5"
+                    y="326.5"
+                    width="117"
+                    height="182"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--8-seat--3"
+                  >
+                    <title>
+                      8 Seat Table Area - Largest table area accommodating groups
+                      of eight people for study
+                    </title>
+                  </rect>
+                  <rect
+                    x="1927.5"
+                    y="327.5"
+                    width="117"
+                    height="182"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--8-seat--2"
+                  >
+                    <title>
+                      8 Seat Table Area - Largest table area accommodating groups
+                      of eight people for study
+                    </title>
+                  </rect>
+                  <rect
+                    x="1760.5"
+                    y="326.5"
+                    width="117"
+                    height="182"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--8-seat--1"
+                  >
+                    <title>
+                      8 Seat Table Area - Largest table area accommodating groups
+                      of eight people for study
+                    </title>
+                  </rect>
+                  <rect
+                    x="2012.5"
+                    y="119.5"
+                    width="67"
+                    height="67"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--9"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="2170.5"
+                    y="119.5"
+                    width="177"
+                    height="67"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--5-seat--1"
+                  >
+                    <title>
+                      5 Seat Table Area - Larger table area accommodating groups
+                      of five people for study
+                    </title>
+                  </rect>
+                  <rect
+                    x="1780.5"
+                    y="119.5"
+                    width="137"
+                    height="67"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat--11"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people located at the right side
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="576.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--8"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="511.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--7"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="446.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--6"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="381.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--5"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="316.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--4"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="251.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--3"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="186.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--2"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1646.5"
+                    y="121.5"
+                    width="65"
+                    height="65"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--seat--1"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="899.5"
+                    y="121.5"
+                    width="747"
+                    height="520"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--information-desk--1"
+                  >
+                    <title>
+                      Information Desk - Main information desk located at the very
+                      center of the library
+                    </title>
+                  </rect>
+                  <rect
+                    x="678.5"
+                    y="586.5"
+                    width="77"
+                    height="157"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-10"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="514.5"
+                    y="586.5"
+                    width="77"
+                    height="157"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-9"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="348.5"
+                    y="586.5"
+                    width="77"
+                    height="157"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-8"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="182.5"
+                    y="586.5"
+                    width="77"
+                    height="157"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-7"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="683.5"
+                    y="396.5"
+                    width="127"
+                    height="72"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-6"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="503.5"
+                    y="396.5"
+                    width="127"
+                    height="72"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-5"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="323.5"
+                    y="396.5"
+                    width="127"
+                    height="72"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-4"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="143.5"
+                    y="396.5"
+                    width="127"
+                    height="72"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-3"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="679.5"
+                    y="255.5"
+                    width="127"
+                    height="72"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-2"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="501.5"
+                    y="255.5"
+                    width="127"
+                    height="72"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--4-seat-1"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating four people
+                      specifically for thesis-related work
+                    </title>
+                  </rect>
+                  <rect
+                    x="538.5"
+                    y="790.5"
+                    width="57"
+                    height="197"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--11"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="688.5"
+                    y="790.5"
+                    width="57"
+                    height="197"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--10"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="388.5"
+                    y="790.5"
+                    width="57"
+                    height="197"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--9"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="138.5"
+                    y="915.5"
+                    width="202"
+                    height="62"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--8"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="138.5"
+                    y="790.5"
+                    width="202"
+                    height="62"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--7"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="488.5"
+                    y="508.5"
+                    width="267"
+                    height="47"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--6"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="138.5"
+                    y="509.5"
+                    width="267"
+                    height="47"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--5"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="390.5"
+                    y="117.5"
+                    width="47"
+                    height="197"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--4"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="298.5"
+                    y="117.5"
+                    width="47"
+                    height="197"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--3"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="200.5"
+                    y="117.5"
+                    width="47"
+                    height="197"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--2"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="29.5"
+                    y="307.5"
+                    width="67"
+                    height="497"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="1st--thesis--1"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <g filter="url(#filter0_d_39_2)">
+                    <rect
+                      x="5.5"
+                      y="1.5"
+                      width="2587"
+                      height="1077"
+                      stroke="black"
+                      stroke-width="3"
+                      shape-rendering="crispEdges"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_39_2"
+                      x="0"
+                      y="0"
+                      width="2598"
+                      height="1088"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feflood flood-opacity="0" result="BackgroundImageFix" />
+                      <fecolormatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feoffset dy="4" />
+                      <fegaussianblur stdDeviation="2" />
+                      <fecomposite in2="hardAlpha" operator="out" />
+                      <fecolormatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feblend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_39_2"
+                      />
+                      <feblend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_39_2"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+  
+                <div class="library-map-footer">
+                  <div class="library-map-legend-container">
+                    <div class="library-map-legend">
+                      <p class="library-map-text">
+                        <ion-icon name="book" class="library-map-legend-icon library-vacant"></ion-icon>Vacant
+                      </p>
+                    </div>
+                    <div class="library-map-legend">
+                      <p class="library-map-text">
+                        <ion-icon name="book" class="library-map-legend-icon library-occupied"></ion-icon>Occupied
+                      </p>
+                    </div>
+                  </div>
+  
+                  <div class="library-map-modify-container">
+                    <button class="library-map-modify">Edit</button>
+                    <button class="library-map-modify">Save</button>
+                  </div>
+  
+                  <div class="next-floor-btn-container">
+                    <button
+                      type="button"
+                      class="next-floor-btn"
+                      onclick="toggleLibraryContainer('1st-floor-library', '2nd-floor-library')"
+                    >
+                      Go to 2nd floor &gt;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="library-container hidden-floor-map" id="2nd-floor-library" >
+              <h2 class="map-heading">2nd Floor</h2>
+              <div class="library-map">
+                <!-- 2nd Floor Library Map  -->
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 2598 1088"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="2nd-floor-stair">
+                    <rect
+                      x="2325.5"
+                      y="985.5"
+                      width="207"
+                      height="32"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 1st Floor - Stairs that provide access to go
+                        back to the first floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2325.5"
+                      y="953.5"
+                      width="207"
+                      height="32"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 1st Floor - Stairs that provide access to go
+                        back to the first floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2325.5"
+                      y="921.5"
+                      width="207"
+                      height="32"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 1st Floor - Stairs that provide access to go
+                        back to the first floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2325.5"
+                      y="889.5"
+                      width="207"
+                      height="32"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 1st Floor - Stairs that provide access to go
+                        back to the first floor
+                      </title>
+                    </rect>
+                    <rect
+                      x="2325.5"
+                      y="857.5"
+                      width="207"
+                      height="32"
+                      stroke="black"
+                      stroke-width="3"
+                      fill="transparent"
+                      cursor="pointer"
+                      class="map-hover"
+                    >
+                      <title>
+                        Stairs to 1st Floor - Stairs that provide access to go
+                        back to the first floor
+                      </title>
+                    </rect>
+                  </g>
+  
+                  <rect
+                    x="1819.5"
+                    y="782.5"
+                    width="417"
+                    height="237"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd-book-return"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="1616.5"
+                    y="693.5"
+                    width="67"
+                    height="327"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--10"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="1458.5"
+                    y="693.5"
+                    width="67"
+                    height="327"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--9"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="1300.5"
+                    y="693.5"
+                    width="67"
+                    height="327"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--8"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="1142.5"
+                    y="693.5"
+                    width="67"
+                    height="327"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--7"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="984.5"
+                    y="693.5"
+                    width="67"
+                    height="327"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--6"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="826.5"
+                    y="693.5"
+                    width="67"
+                    height="327"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--5"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="668.5"
+                    y="693.5"
+                    width="67"
+                    height="327"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--4"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="443.5"
+                    y="783.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--4-seat--12"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="307.5"
+                    y="604.5"
+                    width="267"
+                    height="67"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--3b"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="235.5"
+                    y="604.5"
+                    width="72"
+                    height="412"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--3a"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="1521.5"
+                    y="552.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--19"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1381.5"
+                    y="552.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--18"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1001.5"
+                    y="552.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--17"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="861.5"
+                    y="552.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--16"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="2153.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="1963.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="1773.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="1583.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="1393.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="1203.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="1013.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="823.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="633.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="443.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="253.5"
+                    y="342.5"
+                    width="82"
+                    height="147"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                  >
+                    <title>
+                      4 Seat Table Area - A table accommodating groups of four
+                      people for academic purposes
+                    </title>
+                  </rect>
+                  <rect
+                    x="64.5"
+                    y="64.5"
+                    width="67"
+                    height="537"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--2"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <rect
+                    x="2057.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--15"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1980.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--14"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1852.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--13"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1776.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--12"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1614.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--11"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1537.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--10"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1460.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--9"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1383.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--8"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1306.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--7"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1229.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--6"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1152.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--5"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="1075.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--4"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="998.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--3"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="921.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--2"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="844.5"
+                    y="64.5"
+                    width="77"
+                    height="77"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--seat--1"
+                  >
+                    <title>
+                      Single Seat - Individual seating option for those who prefer
+                      to study and work alone
+                    </title>
+                  </rect>
+                  <rect
+                    x="653.5"
+                    y="64.5"
+                    width="77"
+                    height="227"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--thesis--1"
+                  >
+                    <title>
+                      Thesis Section - Section with shelves composed of thesis
+                      materials from the past years
+                    </title>
+                  </rect>
+                  <rect
+                    x="258.5"
+                    y="64.5"
+                    width="262"
+                    height="67"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="transparent"
+                    cursor="pointer"
+                    class="map-hover"
+                    id="2nd--book--1"
+                  >
+                    <title>
+                      Book Section - The main area where book for different
+                      courses can be accessed
+                    </title>
+                  </rect>
+                  <g filter="url(#filter0_d_39_124)">
+                    <rect
+                      x="5.5"
+                      y="1.5"
+                      width="2587"
+                      height="1077"
+                      stroke="black"
+                      stroke-width="3"
+                      shape-rendering="crispEdges"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_39_124"
+                      x="0"
+                      y="0"
+                      width="2598"
+                      height="1088"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feflood flood-opacity="0" result="BackgroundImageFix" />
+                      <fecolormatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feoffset dy="4" />
+                      <fegaussianblur stdDeviation="2" />
+                      <fecomposite in2="hardAlpha" operator="out" />
+                      <fecolormatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feblend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_39_124"
+                      />
+                      <feblend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_39_124"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+  
+                <div class="library-map-footer">
+                  <div class="library-map-legend-container">
+                    <div class="library-map-legend">
+                      <p class="library-map-text">
+                        <ion-icon name="book" class="library-map-legend-icon library-vacant"></ion-icon>Vacant
+                      </p>
+                    </div>
+                    <div class="library-map-legend">
+                      <p class="library-map-text">
+                        <ion-icon name="book" class="library-map-legend-icon library-occupied"></ion-icon>Occupied
+                      </p>
+                    </div>
+                  </div>
+  
+                  <div class="library-map-modify-container">
+                    <button class="library-map-modify">Edit</button>
+                    <button class="library-map-modify">Save</button>
+                  </div>
+  
+                  <div class="next-floor-btn-container">
+                    <button
+                      type="button"
+                      class="next-floor-btn"
+                      onclick="toggleLibraryContainer('2nd-floor-library', '1st-floor-library')"
+                    >
+                      Go to 1st floor &gt;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Information -->
+          <div class="student-information-container">
+            <div class="student-information-content">
+              <div class="student-information-header">
+                <button class="student-information-edit">Edit</button>
+                <select
+                class="department-select"
+                id="department-selection"
+                name="department-selection"
+                onchange="filterTable()"
+              >
+                <option value="" selected>Select College Department</option>
+                <option value="N/A">Not Applicable</option>
+                <option value="CAS">
+                  College of Arts and Sciences (CAS)
+                </option>
+                <option value="CBAA">
+                  College of Business Administration and Accountancy (CBAA)
+                </option>
+                <option value="CCS">
+                  College of Computer Studies (CCS)
+                </option>
+                <option value="CCJE">
+                  College of Criminal Justice Education (CCJE)
+                </option>
+                <option value="COE">College of Engineering (COE)</option>
+                <option value="CHMT">
+                  College of Hospitality Management and Tourism (CHMT)
+                </option>
+                <option value="CIT">
+                  College of Industrial Technology (CIT)
+                </option>
+                <option value="COL">College of Law (COL)</option>
+                <option value="CONAH">
+                  College of Nursing and Allied Health (CONAH)
+                </option>
+                <option value="CTE">
+                  College of Teacher Education (CTE)
+                </option>
+                <option value="SHS">Senior High School (SHS)</option>
+              </select>
+              </div>
+              <div class="table-container">
+                <table>
+                  <thead class="table-header">
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                  </thead>
+  
+                  <tbody>
+                    
+                    {% for student in students %}
+                    <tr>
+                      <td>{{ student.student_id }}</td>
+                      <td>{{ student.student_full_name }}</td>
+                      <td>{{ student.student_department }}</td>
+                      <td>{{ student.student_course }}</td>
+                      <td>{{ student.student_year }}</td>
+                    </tr>
+                    {% endfor %}
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>            
+          </div>  
+
+          <!-- History of Visit -->
+          <div class="visit-history-container">
+            <div class="visit-history-content">
+              <div class="visit-history-header">
+                <input type="date" id="dateFilterInput" class="visit-history-date" oninput="filterTableByDate()" placeholder="Filter by Date">
+                <button onclick="showAllRows()" class="visit-history-all--btn">Show All</button>
+              </div>
+              <div class="table-container">
+                <table id="dataTable">
+                  <thead class="table-header">
+                    <th>Date</th>
+                    <th>Student ID</th>
+                    <th>Department</th>
+                    <th>Course</th>
+                    <th>Purpose of Visit</th>
+                    <th>IN</th>
+                    <th>OUT</th>
+                  </thead>
+  
+                  <tbody>
+                    
+                    {% for history in historys %}
+                    <tr>
+                      <td>{{ history.date_of_entry }}</td>
+                      <td>{{ history.student_id }}</td>
+                      <td>{{ history.student_department }}</td>
+                      <td>{{ history.student_course }}</td>
+                      <td>{{ history.purpose_of_entry }}</td>
+                      <td>{{ history.time_of_entry }}</td>
+                    </tr>
+                    {% endfor %}
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
